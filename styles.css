@@ -18,3 +18,8 @@
 .starting-block {
   background-color: blue;
 }
+
+.log-left,
+.log-right {
+  background-color: lightblue;
+}

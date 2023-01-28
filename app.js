@@ -1,2 +1,2 @@
 const timeLeftDisplay = document.querySelector('#time-left')
-document.querySelector()
+const resultDisplay = document.querySelector('#result')

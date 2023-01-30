@@ -10,6 +10,9 @@ function moveFrog() {
     case 'ArrowLeft' :
       console.log('move left')
       break
+    case 'ArrowRight' :
+      console.log('move right')
+      break
   }
 
 

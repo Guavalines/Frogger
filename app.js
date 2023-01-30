@@ -6,6 +6,12 @@ console.log(squares)
 let currentIndex = 76
 function moveFrog() {
 
+  switch(e) {
+    case 'ArrowLeft' :
+      console.log('move left')
+      break
+  }
+
 
   squares[currentIndex].classList.add('frog')
 }

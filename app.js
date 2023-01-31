@@ -16,6 +16,9 @@ function moveFrog() {
     case 'ArrowUp' :
       console.log('move up')
       break
+    case 'ArrowDown' :
+      console.log('move down')
+      break
 
   }
 

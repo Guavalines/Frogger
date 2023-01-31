@@ -7,6 +7,7 @@ let currentIndex = 76
 const width = 9
 
 function moveFrog(e) {
+  squares[currentIndex].classList.remove('frog')
 
   switch(e.key) {
     case 'ArrowLeft' :

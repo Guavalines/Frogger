@@ -9,9 +9,11 @@ function moveFrog() {
   switch(e) {
     case 'ArrowLeft' :
       console.log('move left')
+      currentIndex -= 1
       break
     case 'ArrowRight' :
       console.log('move right')
+      currentIndex += 1
       break
     case 'ArrowUp' :
       console.log('move up')

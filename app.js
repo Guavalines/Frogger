@@ -12,7 +12,7 @@ function moveFrog(e) {
   switch(e.key) {
     case 'ArrowLeft' :
       console.log('move left')
-      currentIndex -= 1
+      if (currentIndex % width !== 0) currentIndex -= 1
       break
     case 'ArrowRight' :
       console.log('move right')

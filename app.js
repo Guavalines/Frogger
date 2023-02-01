@@ -16,7 +16,7 @@ function moveFrog(e) {
       break
     case 'ArrowRight' :
       console.log('move right')
-      currentIndex += 1
+      if (currentIndex % width < width - 1) currentIndex += 1
       break
     case 'ArrowUp' :
       console.log('move up')

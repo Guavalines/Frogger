@@ -40,6 +40,14 @@ function moveLogLeft(logLeft) {
       logLeft.classList.remove('l1')
       logLeft.classList.add('l2')
       break
+    case logLeft.classList.contains('l2') :
+      logLeft.classList.remove('l2')
+      logLeft.classList.add('l3')
+      break
+    case logLeft.classList.contains('l3') :
+      logLeft.classList.remove('l3')
+      logLeft.classList.add('l4')
+      break
   }
 }
 

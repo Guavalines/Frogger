@@ -42,3 +42,5 @@ function moveLogLeft(logLeft) {
       break
   }
 }
+
+setInterval(autoMoveLogs, 1000)

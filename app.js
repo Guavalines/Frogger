@@ -2,6 +2,7 @@ const timeLeftDisplay = document.querySelector('#time-left')
 const resultDisplay = document.querySelector('#result')
 const StartPauseButton = document.querySelector('#start-pause-button')
 const squares = document.querySelectorAll('.grid div')
+const logsleft = document.querySelectorAll('.log-left')
 console.log(squares)
 let currentIndex = 76
 const width = 9
@@ -28,3 +29,10 @@ function moveFrog(e) {
   squares[currentIndex].classList.add('frog')
 }
 document.addEventListener('keyup', moveFrog)
+
+
+function moveLogLeft() {
+  switch(true) {
+    case
+  }
+}

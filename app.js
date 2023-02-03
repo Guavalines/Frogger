@@ -30,9 +30,15 @@ function moveFrog(e) {
 }
 document.addEventListener('keyup', moveFrog)
 
+function autoMoveLogs() {
+  logsleft.forEach(logLeft => moveLogLeft(logLeft))
+}
 
-function moveLogLeft() {
+function moveLogLeft(logLeft) {
   switch(true) {
-    case
+    case logLeft.classList.contains('l1') :
+      logLeft.classList.remove('l1')
+      logLeft.classList.add('l2')
+      break
   }
 }

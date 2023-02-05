@@ -2,8 +2,8 @@ const timeLeftDisplay = document.querySelector('#time-left')
 const resultDisplay = document.querySelector('#result')
 const StartPauseButton = document.querySelector('#start-pause-button')
 const squares = document.querySelectorAll('.grid div')
-const logsleft = document.querySelectorAll('.log-left')
-const logsright = document.querySelectorAll('.log-right')
+const logsLeft = document.querySelectorAll('.log-left')
+const logsRight = document.querySelectorAll('.log-right')
 const carsLeft = document.querySelectorAll('.car-left')
 const carsRight = document.querySelectorAll('.car-right')
 
@@ -35,8 +35,10 @@ function moveFrog(e) {
 document.addEventListener('keyup', moveFrog)
 
 function autoMoveElements() {
-  logsleft.forEach(logLeft => moveLogLeft(logLeft))
-  logsright.forEach(logRight => moveLogRight(logRight))
+  logsLeft.forEach(logLeft => moveLogLeft(logLeft))
+  logsRight.forEach(logRight => moveLogRight(logRight))
+  carsLeft.forEach(carLeft => moveCarLeft(carLeft))
+  carsRight.forEach(carRight => moveCarRight(carRight))
 }
 
 function moveLogLeft(logLeft) {

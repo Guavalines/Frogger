@@ -4,6 +4,8 @@ const StartPauseButton = document.querySelector('#start-pause-button')
 const squares = document.querySelectorAll('.grid div')
 const logsleft = document.querySelectorAll('.log-left')
 const logsright = document.querySelectorAll('.log-right')
+const carsLeft = document.querySelectorAll('.car-left')
+const carsRight = document.querySelectorAll('.car-right')
 
 console.log(squares)
 let currentIndex = 76
@@ -32,7 +34,7 @@ function moveFrog(e) {
 }
 document.addEventListener('keyup', moveFrog)
 
-function autoMoveLogs() {
+function autoMoveElements() {
   logsleft.forEach(logLeft => moveLogLeft(logLeft))
   logsright.forEach(logRight => moveLogRight(logRight))
 }
@@ -87,4 +89,4 @@ function moveLogRight(logRight) {
   }
 }
 
-setInterval(autoMoveLogs, 1000)
+setInterval(autoMoveElements, 1000)

@@ -10,6 +10,7 @@ const carsRight = document.querySelectorAll('.car-right')
 console.log(squares)
 let currentIndex = 76
 const width = 9
+let timerId
 
 function moveFrog(e) {
   squares[currentIndex].classList.remove('frog')
@@ -128,7 +129,8 @@ function moveCarRight(carRight) {
 function lose() {
   if (squares[currentIndex].classList.contains('c1')) {
       resultDisplay.textContent = 'You lose!'
+      clearInterval(timerId)
   }
 }
 
-setInterval(autoMoveElements, 1000)
+timerId = setInterval(autoMoveElements, 1000)

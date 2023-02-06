@@ -125,4 +125,10 @@ function moveCarRight(carRight) {
   }
 }
 
+function lose() {
+  if (squares[currentIndex].classList.contains('c1')) {
+      resultDisplay.textContent = 'You lose!'
+  }
+}
+
 setInterval(autoMoveElements, 1000)

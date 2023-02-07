@@ -40,6 +40,7 @@ function autoMoveElements() {
   logsRight.forEach(logRight => moveLogRight(logRight))
   carsLeft.forEach(carLeft => moveCarLeft(carLeft))
   carsRight.forEach(carRight => moveCarRight(carRight))
+  lose()
 }
 
 function moveLogLeft(logLeft) {
@@ -127,7 +128,11 @@ function moveCarRight(carRight) {
 }
 
 function lose() {
-  if (squares[currentIndex].classList.contains('c1')) {
+  if (
+      squares[currentIndex].classList.contains('c1') ||
+      squares[currentIndex].classList.contains('l4') ||
+      squares[currentIndex].classList.contains('l5')
+      ) {
       resultDisplay.textContent = 'You lose!'
       clearInterval(timerId)
       squares[currentIndex].classList.remove('frog')

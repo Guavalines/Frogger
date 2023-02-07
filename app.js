@@ -140,4 +140,12 @@ function lose() {
   }
 }
 
+function win() (
+  if (squares[currentIndex].classList.contains('ending-block')) {
+      resultDisplay.textContent = 'You Win!'
+      clearInterval(timerId)
+      document.removeEventListener('keyup', moveFrog)
+  }
+)
+
 timerId = setInterval(autoMoveElements, 1000)

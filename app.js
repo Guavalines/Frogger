@@ -11,6 +11,7 @@ console.log(squares)
 let currentIndex = 76
 const width = 9
 let timerId
+let currentTime = 20
 
 function moveFrog(e) {
   squares[currentIndex].classList.remove('frog')
@@ -36,6 +37,8 @@ function moveFrog(e) {
 document.addEventListener('keyup', moveFrog)
 
 function autoMoveElements() {
+  currentTime--
+  timeLeftDisplay.textContent = currentTime
   logsLeft.forEach(logLeft => moveLogLeft(logLeft))
   logsRight.forEach(logRight => moveLogRight(logRight))
   carsLeft.forEach(carLeft => moveCarLeft(carLeft))

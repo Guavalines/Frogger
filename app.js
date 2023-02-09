@@ -154,6 +154,10 @@ function win() {
 
 }
 
-startPauseButton.addEventListener('click', )
-
-timerId = setInterval(autoMoveElements, 1000)
+startPauseButton.addEventListener('click', {
+  if(timerId) {
+    clearInterval(timerId)
+  } else {
+    timerId = setInterval(autoMoveElements, 1000)
+  }
+})

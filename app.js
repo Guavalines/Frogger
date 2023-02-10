@@ -154,10 +154,11 @@ function win() {
 
 }
 
-startPauseButton.addEventListener('click', {
+startPauseButton.addEventListener('click', () => {
   if(timerId) {
     clearInterval(timerId)
   } else {
     timerId = setInterval(autoMoveElements, 1000)
+    document.addEventListener('keyup', moveFrog)
   }
 })

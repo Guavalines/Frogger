@@ -11,6 +11,7 @@ console.log(squares)
 let currentIndex = 76
 const width = 9
 let timerId
+let outcomeTimerId
 let currentTime = 20
 
 function moveFrog(e) {
@@ -43,6 +44,9 @@ function autoMoveElements() {
   logsRight.forEach(logRight => moveLogRight(logRight))
   carsLeft.forEach(carLeft => moveCarLeft(carLeft))
   carsRight.forEach(carRight => moveCarRight(carRight))
+}
+
+function checkOutComes() {
   lose()
   win()
 }
@@ -162,6 +166,7 @@ startPauseButton.addEventListener('click', () => {
     document.removeEventListener('keyup', moveFrog)
   } else {
     timerId = setInterval(autoMoveElements, 1000)
+    outcomeTimerId = setInterval(checkOutComes, 50)
     document.addEventListener('keyup', moveFrog)
   }
 })

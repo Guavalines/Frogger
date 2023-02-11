@@ -44,14 +44,15 @@
 
 h1 {
   text-align: center;
+  color: green;
 }
 
-/* .container {
+.container {
   margin: auto;
   width: 50%;
   text-align: center;
 }
-
+/*
 .grid {
   position: absolute;
   width: 560px;

@@ -38,3 +38,31 @@
 .frog {
   background-color: green;
 }
+
+/*
+----------------------------- */
+
+h1 {
+  text-align: center;
+}
+
+/* .container {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.grid {
+  position: absolute;
+  width: 560px;
+  height: 300px;
+  border: solid black 1px;
+  margin-top: 80px;
+}
+
+.block {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: blue;
+} */

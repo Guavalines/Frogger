@@ -162,6 +162,8 @@ startPauseButton.addEventListener('click', () => {
   console.log('timerId', timerId)
   if(timerId) {
     clearInterval(timerId)
+    clearInterval(outcomeTimerId)
+    outcomeTimerId = null
     timerId = null
     document.removeEventListener('keyup', moveFrog)
   } else {

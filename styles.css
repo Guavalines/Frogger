@@ -1,7 +1,7 @@
 .grid {
-  border: 1px solid black;
-  height: 180px;
-  width: 180px;
+  border: 3px solid black;
+  height: 540px;
+  width: 540px;
   display: flex;
   flex-wrap: wrap;
   top: 100%;
@@ -11,8 +11,8 @@
 }
 
 .grid div {
-  height: 20px;
-  width: 20px;
+  height: 60px;
+  width: 60px;
 }
 
 .ending-block {

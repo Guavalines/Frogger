@@ -4,6 +4,10 @@
   width: 180px;
   display: flex;
   flex-wrap: wrap;
+  top: 100%;
+  left: 50%;
+  margin-top: 35px;
+  margin-left: 360px;
 }
 
 .grid div {
@@ -39,9 +43,6 @@
   background-color: green;
 }
 
-/*
------------------------------ */
-
 h1 {
   text-align: center;
   color: green;
@@ -50,20 +51,9 @@ h1 {
 .container {
   margin: auto;
   width: 50%;
+  border: 3px solid green;
+  padding: 10px;
   text-align: center;
+  border-radius: 10px;
+  font-family:'Arial Narrow Bold', sans-serif;
 }
-/*
-.grid {
-  position: absolute;
-  width: 560px;
-  height: 300px;
-  border: solid black 1px;
-  margin-top: 80px;
-}
-
-.block {
-  position: absolute;
-  width: 100px;
-  height: 20px;
-  background-color: blue;
-} */

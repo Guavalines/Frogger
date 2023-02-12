@@ -7,7 +7,7 @@
   top: 100%;
   left: 50%;
   margin-top: 35px;
-  margin-left: 360px;
+  margin-left: 170px;
 }
 
 .grid div {
@@ -46,6 +46,8 @@
 h1 {
   text-align: center;
   color: green;
+  font-size: 150px;
+  margin-top: 2px;
 }
 
 .container {
@@ -56,4 +58,8 @@ h1 {
   text-align: center;
   border-radius: 10px;
   font-family:'Arial Narrow Bold', sans-serif;
+}
+
+#display {
+  margin-top: -70px;
 }

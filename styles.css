@@ -58,9 +58,12 @@ h1 {
   text-align: center;
   border-radius: 10px;
   font-family:'Arial Narrow Bold', sans-serif;
-  background-color: yellow;
 }
 
 #display {
   margin-top: -70px;
+}
+
+body {
+  background-color: yellow;
 }

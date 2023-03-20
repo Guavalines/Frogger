@@ -32,7 +32,11 @@
 }
 
 .c1 {
-  background-color: black;
+  height: 100px;
+  width: 100px;
+  background-image: url("images/pinkCar.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .c2, .c3 {
@@ -40,7 +44,11 @@
 }
 
 .frog {
-  background-color: green;
+  height: 100px;
+  width: 100px;
+  background-image: url("images/frog.png");
+  background-size: cover;
+  background-position: center;
 }
 
 

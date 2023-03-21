@@ -98,10 +98,23 @@ h3 {
 
 body {
   background-color: #6a8b50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 #start-pause-button {
   background-color: #befa91;
   margin-top: 10px;
   text-align: center;
+}
+
+.result {
+  font-weight: bold;
+  color: black;
+}
+.result.red {
+  color: red;
 }

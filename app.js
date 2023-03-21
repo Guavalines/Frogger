@@ -152,13 +152,22 @@ function lose() {
 
 function win() {
   if (squares[currentIndex].classList.contains('ending-block')) {
-      resultDisplay.textContent = 'You Win!'
-      clearInterval(timerId)
-      clearInterval(outcomeTimerId)
-      document.removeEventListener('keyup', moveFrog)
-  }
+    resultDisplay.textContent = 'You Win!';
+    resultDisplay.classList.add('result');
+    clearInterval(timerId);
+    clearInterval(outcomeTimerId);
+    document.removeEventListener('keyup', moveFrog);
 
+    // Add code to flash between black and red
+    let flashing = setInterval(function() {
+      resultDisplay.classList.toggle('red');
+    }, 500);
+    setTimeout(function() {
+      clearInterval(flashing);
+    }, 5000);
+  }
 }
+
 
 startPauseButton.addEventListener('click', () => {
   console.log('timerId', timerId)

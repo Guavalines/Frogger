@@ -115,6 +115,9 @@ body {
   font-weight: bold;
   color: black;
 }
+.result.green {
+  color: rgb(70, 219, 41);
+}
 .result.red {
-  color: red;
+  color: rgb(219, 41, 41);
 }

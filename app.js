@@ -143,10 +143,19 @@ function lose() {
       currentTime <= 0
       ) {
       resultDisplay.textContent = 'You lose!'
+      resultDisplay.classList.add('result');
       clearInterval(timerId)
       clearInterval(outcomeTimerId)
       squares[currentIndex].classList.remove('frog')
       document.removeEventListener('keyup', moveFrog)
+
+          // Add code to flash between black and red
+    let flashing = setInterval(function() {
+      resultDisplay.classList.toggle('red');
+    }, 500);
+    setTimeout(function() {
+      clearInterval(flashing);
+    }, 5000);
   }
 }
 
@@ -160,7 +169,7 @@ function win() {
 
     // Add code to flash between black and red
     let flashing = setInterval(function() {
-      resultDisplay.classList.toggle('red');
+      resultDisplay.classList.toggle('green');
     }, 500);
     setTimeout(function() {
       clearInterval(flashing);

@@ -66,7 +66,8 @@
 
 h1 {
   text-align: center;
-  margin-bottom: 65px;
+  margin-bottom: -15px;
+  margin-top: -35px;
   color: #befa91;
   font-size: 106px;
   text-shadow: 4px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -94,6 +95,7 @@ h3 {
 
 #display {
   margin-top: -70px;
+  margin-left: 10px;
 }
 
 body {
@@ -107,8 +109,9 @@ body {
 
 #start-pause-button {
   background-color: #befa91;
-  margin-top: 10px;
-  text-align: center;
+  margin-top: 5px;
+  margin-left: -390px;
+  margin-bottom: 10px;
 }
 
 .result {

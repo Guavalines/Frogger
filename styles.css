@@ -84,8 +84,8 @@ h3 {
   }
 
 .container {
-  margin: auto;
-  width: 50%;
+  width: 540px;
+  margin: 0 auto;
   padding: 10px;
   text-align: center;
   border-radius: 10px;

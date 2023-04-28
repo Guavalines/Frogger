@@ -2,6 +2,10 @@
 
 Check it out here: [Frogger](https://guavalines.github.io/Frogger/)
 
+# Decription
+
+In Frogger, players guide a frog through obstacles like cars and alligators to reach a lily pad on the other side of a river. JavaScript code selects various elements in the HTML file using DOM manipulation and assigns all divs in the grid to a variable. The moveFrog() function updates the frog's position on the grid based on the arrow key pressed. Several variables keep track of the current game state, such as the frog's current index, grid width, timer ID, and time left.
+
 # Features
 - switch
 - cases
@@ -11,8 +15,6 @@ Check it out here: [Frogger](https://guavalines.github.io/Frogger/)
 - clearInterval
 - document.querySelector
 - arrow functions
-
-This is a Frogger game made with HTML, CSS, and JavaScript. JavaScript code selects various elements in the HTML file using DOM manipulation and assigns all divs in the grid to a variable. The moveFrog() function updates the frog's position on the grid based on the arrow key pressed. Several variables keep track of the current game state, such as the frog's current index, grid width, timer ID, and time left.
 
 # Tools
 

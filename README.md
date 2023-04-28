@@ -1,6 +1,4 @@
-# FROGGER
-
-Check it out here: [Frogger](https://guavalines.github.io/Frogger/)
+# [FROGGER](https://guavalines.github.io/Frogger/)
 
 # Decription
 
